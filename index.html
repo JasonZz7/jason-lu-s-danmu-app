@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Jason Lu's Danmu App</title>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      * {
+  font-family: '微软雅黑',sans-serif;
+}
+
+body {
+  background: cyan;
+}
+
+.frame {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.danmu-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  margin: 30px 0 20px;
+  background: white;
+}
+
+.danmu-message {
+  position: absolute;
+  display: inline-block;
+}
+
+.danmu-table-frame {
+  overflow: auto;
+  height: 450px;
+  margin: 30px 0 20px;
+  background: white;
+}
+
+.danmu-table {
+  color: #555;
+}
+
+.danmu-table > thead > tr > th {
+  font-weight: bold !important;
+}
+
+.danmu-form form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input {
+  width: 60% !important;
+}
+
+button {
+  width: 19%;
+  background: #000;
+}
+
+hr {
+  width: 60%;
+  margin: 20px auto;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+
+footer > a {
+  text-decoration: none;
+}
+
+footer > a:hover,
+footer > a:active,
+footer > a:focus {
+  text-decoration: underline;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <div class="frame">
+  <div class="row">
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 danmu-box-frame">
+      <div class="danmu-box">
+      </div>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 danmu-table-frame">
+      <table class="table .table-condensed danmu-table">
+        <thead>
+          <tr>
+            <th>
+              Danmu Content
+            </th>
+            <th>
+              Shoot Time
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="danmu-form">
+    <form class="form-inline">
+      <input type="text" class="form-control" placeholder="Text your danmu~~">
+      <button type="button" class="btn btn-primary shoot">  
+        Shoot ! <i class= "fa fa-paper-plane"></i> 
+      </button>
+      <button type="button" class="btn btn-danger clear">  
+        Clear.<i class= "fa fa-eraser"></i>
+      </button>
+    </form>
+  </div>
+</div>
+<hr>
+<footer>
+  Designed By
+  <a href="https://www.linkedin.com/in/jason-lu-0b0018136/" target="_blank"> 
+    Jason Lu</a>.
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
